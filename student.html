@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/studentstyle.css" type="text/css">
+</head>
+<body>
+    <div class="topmove">
+        <div class="topbtn">
+            <a><i id="topbtn" class="fas fa-arrow-alt-circle-down"></i></a>
+        </div>
+    </div>
+    <div class="slidebar">
+        <ul class="slide_menu">
+            
+            <li style="background-color: darkcyan;"><a href="#prepare" >準備</a></li>
+            <li style="background-color: darkgreen;"><a href="#study" >サイト</a></li>
+            <li style="background-color: darkgoldenrod;"><a href="#advice" >勉強</a></li>
+            <li style="background-color: darkorchid;"><a href="#content">お問い合わせ</a></li>
+        </ul>
+    </div>
+    <header id="home">
+        <nav class="nav_logo">
+              <a href="#" target="_blank" type="logo"><i class="fab fa-github-alt"></i></a>
+        </nav>
+
+        <ul class="navbar_menu">
+            
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="school.html">学校紹介</a></li>
+                <li><a href="#" class="active">留学生の方</a></li>
+                <li><a href="contact.html" >お問い合わせ</a></li>
+            
+        </ul>
+
+         <div class="dropdown">
+            <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ホーム</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="school.html" >学校紹介</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item  text-primary" href="student.html">留学生の方</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="contact.html" >お問い合わせ</a></li>
+        </div>
+    </header>
+    <div class="home">
+        <div class="home_img leftremove">
+            <img src="img/student.avif" alt="">
+        </div>
+        <div class="container rightremove">
+            <div>
+                <h1><span>留学生</span>の方へ</h1>
+                <p>IT業界を目指す留学生へ ― 入学前に準備すること</p>
+            </div>
+            <div>
+                <button type="button" id="">
+                    <a href="#prepare">もっと見る</a>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+        
+<!-- Start Prepare -->
+     <div class="prepare" id="prepare">
+        <h1>入学前に<span>準備</span>すること</h1>
+        <div class="cardcontainer">
+            <div class="cardmain">
+                <p>言語</p>
+                <h2>日本語力</h2>
+                <ul>
+                    <li><input type="checkbox" name="" id="">N3以上</li>
+                    <li><input type="checkbox" name="" id="">ITで使う言葉</li>
+                    <li><input type="checkbox" name="" id="">基本的な計算</li>
+                </ul>
+            </div>
+            <div class="cardmain">
+                <p>パソコン</p>
+                <h2>基本操作</h2>
+                <ul>
+                    <li><input type="checkbox" name="" id="">タイピング</li>
+                    <li><input type="checkbox" name="" id="">フォルダの使い方</li>
+                    <li><input type="checkbox" name="" id="">Word/Excel/PowerPoint の基本</li>
+                </ul>
+            </div>
+            <div class="cardmain">
+                <p>学ぶ姿勢</p>
+                <h2> 考え方</h2>
+                <ul>
+                    <li><input type="checkbox" name="" id="">分からなくてもすぐ諦めない</li>
+                    <li><input type="checkbox" name="" id="">エラーは「失敗」ではなく学習</li>
+                    <li><input type="checkbox" name="" id="">毎日少しずつ続ける</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+<!-- End Prepare -->
+
+<!-- Start Study -->
+   <div class="study" id="study">
+        <h1>自宅で学ぶプログラミング<span>サイト</span></h1>
+        <div class="caro">
+            <div class="caro-inner">
+                <div class="caro-item">
+                    <a href="https://www.w3schools.com/" target="_blank"><img src="img/W3Schools.webp" alt=""></a>
+                    <h2>w3schools</h2>
+                    <p>Web開発の基本リファレンス・チュートリアルが豊富。</p>
+                </div>
+                <div class="caro-item">
+                     <a href="https://paiza.jp/" target="_blank"><img src="img/paiza.jpg" alt=""></a>
+                    <h2>Paizaラーニング</h2>
+                    <p>ブラウザ上でプログラミングできて環境構築不要。動画＋演習で学べる</p>
+                </div>
+                <div class="caro-item">
+                     <a href="https://developer.mozilla.org/en-US/" target="_blank"><img src="img/mdn-logo.png" alt=""></a>
+                    <h2>MDN Web Docs</h2>
+                    <p>Mozilla が運営している 公式ドキュメント＆学習サイト です。
+                    </p>
+                </div>  
+            </div>   
+            <a href="javascript:void(0);" class="caro-control-prev" id="prev">
+                    <i class="fas fa-angle-left"></i>
+            </a>
+
+            <a href="javascript:void(0);" class="caro-control-next" id="next">
+                    <i class="fas fa-angle-right"></i>
+            </a> 
+        </div> 
+        
+        
+    </div>
+<!-- End Study -->
+
+<!-- Start Advice -->
+    <div class="advice" id="advice">
+        <h1><span>勉強して</span>おくと有利なこと</h1>
+        <div class="advicecontainer">
+            <div>
+                <div class="box">
+                    <div class="boxhead active">
+                        <h3>プログラミング</h3>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="boxmain">
+                        <ul>
+                            初心者には次の言語がおすすめです
+                            <li> HTML / CSS（Webサイト作成）</li>
+                            <li>Python（分かりやすく人気）</li>
+                            <li>Java（日本で需要が高い）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead">
+                        <h3>学習ポイント</h3>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="boxmain">
+                        <ul>
+                            <li> 基本の文法</li>
+                            <li>簡単なプログラムを書く</li>
+                            <li>エラーが出たら調べる習慣</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxhead">
+                        <h3>留学生へのメッセージ</h3>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="boxmain">
+                        <ul>
+                            <li>IT業界では、国籍や文化の違いを活かして働くこと</li>
+                            <li>大切なのは、やる気・継続力・学ぶ姿勢です。</li>
+                            <li>将来、日本でも母国でも役立てることができます。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boximg">
+                <img src="img/Group-237588.webp" alt="">
+            </div>
+        </div>
+    </div>
+<!-- End Advice -->
+<!-- Start Footer -->
+<footer>
+        <div class="message">
+            <h1>ニュースレターを購読する</h1>
+            <div class="mail">
+                <input type="email" class="email" id="email" placeholder="メールアトレスを入力">
+
+                <input type="button" class="mail_btn" value="送信">
+            </div>
+        </div>
+        <hr>
+        
+        <div class="message2">
+            <div id="messagecarousels" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-bs-target="#messagecarousels" data-bs-slide-to="0"></li>
+                    <li data-bs-target="#messagecarousels" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#messagecarousels" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner content_img">
+                    <div class="carousel-item active">
+                        <img src="img/content.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/content1.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/content2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <h1><a href="contact.html"><span>お問い</span>合わせ</a></h1>
+                <p>ITの勉強や進学について分からないことがあれば、お気軽にお問い合わせください。</p>
+                
+            </div>
+        </div>
+
+        <div class="message3">
+            <nav class="nav_logo">
+                <a href="Programming Project/index.html" target="_blank" title="logo"><i class="fab fa-github-alt"></i></a>
+            </nav>
+
+            <ul class="navbar_menu">
+                
+                    <li><a href="https://github.com/HeinKhant53" title="github"><i class="fab fa-github" target="_blank"></i></a></li>
+                    <li><a href="https://line.me/ti/p/TC7lA1ofuV" title="line"><i class="fab fa-line" target="_blank"></i></a></li>
+                    <li><a href="https://www.instagram.com/lucas.mooraa?igsh=MW9lOGV4Y2FmeGt2Mw%3D%3D&utm_source=qr" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+   
+<!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="js/student.js"></script>
+</body>
+</html>

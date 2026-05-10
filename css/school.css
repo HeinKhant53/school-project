@@ -1,0 +1,500 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    height: 100vh;
+}
+
+/* topbtn */
+.topmove{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.topbtn{
+    width: 30px;
+    height: 30px;
+
+    color: #6e57e0;
+    text-align: center;
+    font-size: 30px;   
+}
+/* topbtn */
+/* slidebar */
+@media only screen and (max-width: 600px) {
+    .slidebar{
+        display: none;
+    }
+}
+.slidebar{
+    position: relative;
+} 
+.slide_menu{
+    width: 130px;
+    list-style: none; 
+    position: fixed;
+    top: 250px;
+    left: -150px;
+    
+}
+.slide_menu li {
+    width: inherit;
+    text-align: center;
+    background-color: #6e57e0;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 2px;
+
+    transform: translateX(0px);
+    transition: all 1s;
+}
+.slide_menu li:hover {
+    
+    transform: translateX(80%);
+}
+.slide_menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+/* slidebar */
+
+/* navbar */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+
+    background-color: #806aef;
+}
+header .nav_logo a .fa-github-alt{
+    color: #eee;
+    font-size: 60px;
+}
+header .nav_logo a .fa-github-alt:hover{
+    color: #111;
+}
+
+
+header .navbar_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar_menu li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+header .navbar_menu li a{
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .navbar_menu li .active{
+    color: #333;
+    border: 1px solid #111;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+
+header .navbar_menu li a:hover{
+
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+/* start home */
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home .containers{
+    color: #111;
+    font-size: 25px;
+}
+.home .containers div{
+    text-align: end;
+}
+.home .containers div h1 img{
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 5px  5px rgba(0,0,0,0.2);
+}
+.home .containers div.note{
+    font-size: 20px;
+    color: rgba(247, 214, 30, 0.801);
+}
+.home .containers button{
+    background-color:#6e57e0;
+    font-size: 20px;
+    width: 200px;
+
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.home .containers button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.home .homearrow i{
+    
+    font-size: 30px;
+    color: #111;
+}
+.home .home_img img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    
+}
+
+
+/* Animation */
+.home .leftremove{
+    animation-name: myleft;
+    animation-duration: 5s;
+}
+.home .rightremove{
+    animation-name: myright;
+    animation-duration: 5s;
+}
+
+
+@keyframes myleft {
+    from{
+        
+        opacity: 0;
+    }
+    to{
+    
+        opacity: 1;
+    }
+}
+
+@keyframes myright {
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+
+/* Animation */
+/* end home */
+
+.intro{
+    margin-top: 150px;
+}
+.intro h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.intro  h1 span{
+    color: #6e57e0;
+}
+
+.intro p{
+    margin: 30px 0; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.intro p span{
+    color: #ffbf1f;
+}
+
+.intro .subcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.deptboxes{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    
+    position: relative;
+
+    overflow: hidden;
+}
+
+.deptboxes img{
+    width: 100%;
+    transition: all .5s;
+}
+
+.deptboxes .contents{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    background: #fff;
+
+    position: absolute;
+    bottom: -85%;
+    left: 10%;
+}
+
+.deptboxes h3{
+    color: #7860ed;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    padding-top: 6px;
+}
+.deptboxes p{
+    width: 80%;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.deptboxes:hover .contents{
+    width: 100%;
+    height: 50%;
+
+    left: 0;
+    bottom: 0;
+    transition: all 2s;
+
+}
+.deptboxes:hover a{
+    opacity: 1;
+    transition-delay: .5s;
+}
+.deptboxes:hover img{
+    transform: scale(1.2);
+}
+
+
+
+/* Start Footer */
+footer{
+    margin-top: 150px;
+}
+footer .message{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer .message h1{
+    font-size: 30px;
+    color: #806aef;
+    margin-bottom: 15px;
+}
+
+footer .message .mail{
+    width: 400px;
+
+    border: 2px solid #6e57e0;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .message .mail .email{
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer .message .mail .email:hover{
+    cursor: pointer;
+}
+footer .message .mail .mail_btn{
+    width: 80px;
+    background-color: #6e57e0;
+    color: #fff;
+
+    border: none;
+    border-radius: 10px;
+    padding: 3px 5px; 
+    
+}
+footer .message .mail .mail_btn:hover{
+    cursor: pointer;
+}
+
+footer .message2 {
+    width: 500px;
+    
+    margin: 50px auto;
+    text-align: center;
+}
+footer .message2 ol{
+    list-style: none;
+}
+.carousel-item img{
+    width: 400px;
+    height: 300px;
+}
+footer .message2 .content{
+    margin-top: 20px;
+}
+footer .message2 .content h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+footer .message2 .content h1 span{
+    color: #6e57e0; 
+}
+footer .message2 .content a{
+    text-decoration: none;
+    color: #111;
+}
+footer .message2 .content  ul{
+    list-style-type: none;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+footer .message2 .content  ul li i{
+    color: #6e57e0;
+}
+
+.message3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+
+    background-color: #806aef;
+}
+
+.message3 .nav_logo a .fa-github-alt{
+    color: #eee;
+    font-size: 60px;
+}
+.message3 .nav_logo a .fa-github-alt:hover{
+    color: #111;
+
+}
+
+.message3 .navbar_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message3 .navbar_menu li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+.message3 .navbar_menu li a{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.message3 .navbar_menu li a:hover{
+    color: #333;
+}
+/* End Footer */
+
+.dropdown{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dropdown{
+        display: block;
+    }
+     .navbar_menu{
+        opacity: 0;
+    }    
+   body{
+     margin: 0 auto;
+   }
+   
+    header .navbar_menu{
+        font-size: 8px;
+    }  
+        header .navbar_menu li a:hover{
+        font-weight: 0;
+        border: 0;
+        border: 1px solid #111;
+        padding: 2px;
+        border-radius: 2px;
+    }
+    .home{
+        display: grid;
+        place-items: center;
+        height: 700px;
+      
+    }
+    .home .container{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .home .homearrow{
+        display: none;
+    }
+    
+    .intro h1{
+        font-size: 35px;
+        margin: 50px 0;
+    }
+    
+    .intro p{
+        font-size: 20px;
+    }
+    .intro .subcontainer{
+        flex-wrap: wrap;
+    }
+
+    .deptboxes{
+        width: 300px;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .deptboxes .contents{
+        bottom: -85%;
+        left: 10%;
+}
+
+    .carousel-item img{
+        width: 300px;
+        height: 200px;
+    }
+    .message2 .content p{
+        font-size: 12px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    header .navbar_menu{
+        font-size: 8px;
+    } 
+}

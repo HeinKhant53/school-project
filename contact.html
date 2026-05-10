@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Start Topbar -->
+    <div class="topmove">
+        <div class="topbtn">
+            <a><i id="topbtn" class="fas fa-arrow-alt-circle-down"></i></a>
+        </div>
+    </div>
+    <!-- End Topbar -->
+
+    <header id="home">
+        <nav class="nav_logo">
+              <a href="#" target="_blank" type="logo"><i class="fab fa-github-alt"></i></a>
+        </nav>
+
+        <ul class="navbar_menu">
+            
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="school.html" >学校紹介</a></li>
+                <li><a href="student.html" >留学生の方</a></li>
+                <li><a href="contact.html" class="active" style="background-color: inherit;">お問い合わせ</a></li>
+            
+        </ul>
+        <div class="dropdown">
+            <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-primary" href="#">ホーム</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="school.html" >学校紹介</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="student.html" >留学生の方</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="contact.html" >お問い合わせ</a></li>
+        </div>
+    </header>
+
+
+
+
+    <section class="container" id="messageContainer">
+        <p>ご質問・ご相談などがございましたら、お気軽にお問い合わせください。</p>
+        <div class="contact-flow">
+            <ol class="contact-flow-group">
+                <li class="contact-flow-item number1">
+                    <p class="contact-flow-number active">1</p>
+                    <p class="contact-flow-text active-text">入力</p>
+                </li>
+                
+                <li class="contact-flow-item number2">
+                    <p class="contact-flow-number">2</p>
+                    <p class="contact-flow-text">確認</p>
+                </li>
+                <li class="contact-flow-item number3">
+                    <p class="contact-flow-number">3</p>
+                    <p class="contact-flow-text">完了</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <p  class="contact-infro"><span style="color: red;">*</span>は入力必須項目です</p>
+    <div id="contactBox">
+        <div class="sub-container infor">
+            <div class="infor-one">
+                <div class="infor-text">
+                    <p>お問い合わせ種別</p>
+                </div>
+
+                <ul class="infor-list">
+                    <li class="infor-list-item"><input type="checkbox" name="" id="">無償サンプル評価</li>
+                    <li class="infor-list-item"><input type="checkbox" name="" id="">デモ・お試し</li>
+                    <li class="infor-list-item"><input type="checkbox" name="" id="">詳細問合せ・相談</li>
+                    <li class="infor-list-item"><input type="checkbox" name="" id="">その他</li>
+
+                </ul>
+            </div>
+            <div class="infor-two">
+                <div class="infor-text">
+                    <p>お問い合わせ内容<span style="color: red;">*</span></p>
+
+                    <ul class="infor-text-list">
+                        <li>※500文字以内</li>
+                        <li>※URL(http)は入力不可</li>
+                    </ul>
+                </div>
+
+                <textarea name="" class="infor-message" autofocus></textarea>
+            </div>
+        </div>
+
+        <div class="infor-three">
+                <div class="infor-text">
+                    <p>お名前<span style="color: red;">*</span></p>
+                </div>
+
+                <div class="infor-name">
+                    <input type="text" name="" class="name" id="username"  placeholder="ヘイン　カン　ゾウ">
+                </div>
+            
+        </div>
+        <div class="infor-three">
+                <div class="infor-text">
+                    <p>フリガナ<span style="color: red;">*</span></p>
+                </div>
+
+                <div class="infor-name">
+                    <input type="text" name="" class="jname" placeholder="Hein Khant Zaw">
+                </div>
+            
+        </div>
+        <div class="infor-three">
+                <div class="infor-text">
+                    <p>学校名<span style="color: red;">*</span></p>
+                </div>
+
+                <div class="infor-name">
+                    <input type="text" name="" class="school">
+                </div>
+            
+        </div>
+        <div class="infor-three">
+                <div class="infor-text">
+                    <p>電話番号<span style="color: red;">*</span></p>
+                </div>
+
+                <div class="infor-name">
+                    <input type="tel" name="" class="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+            
+        </div>
+         <div class="infor-three">
+                <div class="infor-text">
+                    <p>メールアドレス<span style="color: red;">*</span></p>
+                </div>
+
+                <div class="infor-name">
+                    <input type="email" name="" id="eamil" placeholder="abc@gmail.com">
+                </div>
+            
+        </div>
+    </div>
+       
+        
+        <div class="infor-send">
+             <p><span style="color: steelblue;">プライバシーポリシー</span>を一読のうえ、 確認画面へお進みください。</p>
+            <button type="button" class="return" style="display: none;">前画面に戻る</button>
+            <button type="submit" class="submit">入力内容を確認する</button>
+            <button type="button" class="send" style="display: none;">送信する</button>
+            <button type="button" class="homebtn" style="display: none; margin-bottom: 115px;">トップページへ戻る</button>
+        </div>
+    </section>
+    
+
+
+    <footer id="content">
+       
+
+        <div class="message3">
+            <nav class="nav_logo">
+                <a href="#" target="_blank" title="logo"><i class="fab fa-github-alt"></i></a>
+            </nav>
+
+            <ul class="navbar_menu">
+                
+                    <li><a href="https://github.com/HeinKhant53" title="github" target="_blank"> <i class="fab fa-github"></i></a></li>
+                    <li><a href="https://line.me/ti/p/TC7lA1ofuV" title="line" target="_blank"><i class="fab fa-line"></i></a></li>
+                    <li><a href="https://www.instagram.com/lucas.mooraa?igsh=MW9lOGV4Y2FmeGt2Mw%3D%3D&utm_source=qr" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+     
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
