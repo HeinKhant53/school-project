@@ -498,3 +498,132 @@ footer .message2 .content  ul li i{
         font-size: 8px;
     } 
 }
+
+/* Responsive phone and tablet layout */
+html{
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    header{
+        padding: 12px 24px;
+    }
+
+    header .navbar_menu{
+        display: none;
+    }
+
+    .message3 .navbar_menu{
+        display: flex;
+        opacity: 1;
+        padding-left: 0;
+    }
+
+    .home{
+        height: auto;
+        min-height: calc(100vh - 90px);
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .home .containers div{
+        text-align: center;
+    }
+
+    .home .home_img img{
+        width: min(400px, 90vw);
+        height: auto;
+    }
+
+    .intro{
+        margin-top: 80px;
+        padding: 0 16px;
+    }
+
+    .deptboxes{
+        width: min(400px, 92vw);
+    }
+
+    footer .message2,
+    footer .message .mail{
+        width: min(500px, 92vw);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 10px 16px;
+    }
+
+    header .nav_logo a .fa-github-alt,
+    .message3 .nav_logo a .fa-github-alt{
+        font-size: 42px;
+    }
+
+    .home .containers{
+        font-size: 20px;
+    }
+
+    .home .containers div h1 img{
+        width: 70px;
+    }
+
+    .intro h1{
+        font-size: 28px;
+    }
+
+    .intro p{
+        font-size: 16px;
+    }
+
+    .deptboxes{
+        height: 250px;
+    }
+
+    .deptboxes .contents{
+        height: 68%;
+        bottom: -55%;
+    }
+
+    .deptboxes p{
+        font-size: 15px;
+    }
+
+    footer .message .mail{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .message .mail .email,
+    footer .message .mail .mail_btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel-item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .message3{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .message3 .navbar_menu{
+        display: flex;
+        opacity: 1;
+        padding-left: 0;
+    }
+}

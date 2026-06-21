@@ -151,3 +151,64 @@ h1{
     text-align: center;
     margin-top: 10px;
 }
+
+/* Responsive phone and tablet layout */
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        margin: 30px 18px;
+    }
+
+    h1{
+        width: min(300px, 100%);
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .paragraph{
+        width: 100%;
+    }
+
+    .photo img{
+        width: min(300px, 80vw);
+    }
+
+    .skill{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 20px;
+        border-radius: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 20px 12px;
+    }
+
+    .contact-icon .icon,
+    .technical_icon div{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mutliskill{
+        margin: 30px auto;
+    }
+
+    .skill h3{
+        font-size: 22px;
+    }
+}

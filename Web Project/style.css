@@ -210,3 +210,112 @@ hr{
     
 }
 
+/* Responsive phone and tablet layout */
+*{
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+    img{
+        max-width: 92vw;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    nav ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav ul li{
+        width: auto;
+    }
+
+    .fbody h1{
+        font-size: 28px;
+        letter-spacing: 6px;
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    .flist{
+        width: 92vw;
+    }
+
+    .flist p,
+    .food div{
+        width: 100%;
+    }
+
+    .food div{
+        padding: 0 14px;
+    }
+
+    .femoji{
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .femoji .material-symbols-outlined{
+        margin: 0 20px;
+    }
+
+    .ftext{
+        width: 92%;
+        letter-spacing: 3px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .logo h2{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul{
+        padding-left: 0;
+    }
+
+    nav ul li a{
+        display: block;
+        padding: 8px;
+    }
+
+    .fbody h1{
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .flist p{
+        font-size: 24px;
+    }
+
+    .flist ul{
+        padding-left: 18px;
+    }
+
+    .flist ul li a,
+    .food div h2,
+    .fbody2 p{
+        letter-spacing: 1px;
+    }
+
+    .food div h2{
+        font-size: 24px;
+    }
+
+    .import{
+        margin-left: 0;
+    }
+}
+

@@ -405,6 +405,119 @@ header .navbar_menu li a:hover{
     } 
 }
 
+/* Responsive phone and tablet layout */
+html{
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+}
+
+input,
+textarea,
+button{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    header{
+        padding: 12px 24px;
+    }
+
+    header .navbar_menu{
+        display: none;
+    }
+
+    .message3 .navbar_menu{
+        display: flex;
+        opacity: 1;
+        padding-left: 0;
+    }
+
+    #messageContainer{
+        max-width: 94vw;
+        padding: 30px 12px;
+    }
+
+    .infor-one,
+    .infor-two,
+    .infor-three,
+    .infor-four{
+        grid-template-columns: 180px minmax(0, 1fr);
+    }
+
+    .infor-three .infor-name input{
+        width: 100%;
+    }
+
+    .infor-two textarea{
+        min-height: 180px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 10px 16px;
+    }
+
+    header .nav_logo a .fa-github-alt,
+    .message3 .nav_logo a .fa-github-alt{
+        font-size: 42px;
+    }
+
+    .contact-flow-group{
+        padding-left: 0;
+        gap: 12px;
+    }
+
+    .infor-one,
+    .infor-two,
+    .infor-three,
+    .infor-four{
+        display: block;
+    }
+
+    .infor-text{
+        justify-content: flex-start;
+        padding: 12px;
+    }
+
+    .infor-list{
+        padding: 12px;
+    }
+
+    .infor-list-item{
+        margin-bottom: 8px;
+    }
+
+    .infor-two textarea{
+        width: calc(100% - 10px);
+    }
+
+    .infor-send p{
+        font-size: 16px;
+    }
+
+    .infor-send button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .message3{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .message3 .navbar_menu{
+        display: flex;
+        opacity: 1;
+        padding-left: 0;
+    }
+}
+
 
 
 
